@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root{
-    --primary: #707280;
-    --secondary:#616170 ;
+    --primary: #000000;
+    --secondary:#000000 ;
     --pure: #fff;
     --purple: #7a00ff;
     --orange: #ff0f0f;
@@ -24,23 +24,13 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--primary);
-}
+
 
 .hamburger{
-    color: rgba(255,255,255,0.5);
+    color: rgb(255, 255, 255);
 }
 
-.logo{
-    font-size: x-large;
-    color: #7a00ff;
-    font-weight: 600;
-}
 
-.logo:hover{
-    color: #7a00ff;
-}
 
 header i{
     font-size: x-large;
