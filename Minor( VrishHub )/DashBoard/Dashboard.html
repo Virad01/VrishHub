@@ -49,7 +49,7 @@
         <main>
             <H1>Dashboard</H1>
             <div class="date">
-                <input type="date">
+                <span id="date"> </span>
             </div>
             <div class="insights">
                 <div class="holdings">
@@ -116,7 +116,7 @@
             </div>
             <!-- End of Insights -->
             <div class="recent-purchase">
-                <H2>Recent Purchase</H2>
+                <H2>Recommended Stocks </H2>
                 <table>
                     <thead>
                         <tr>
@@ -246,19 +246,8 @@
                         <h5 class="danger">50%</h5>
                     </div>
                 </div>
-                <div class="stocks static">
-                    <div class="icon">
-                        <span class="material-icons-sharp">
-                            sailing
-                            </span>
-                    </div>
-                    <div class="right">
-                        <div class="info">
-                            <a href=""><h3>Static Stocks</h3></a>
-                            <small class="text-muted">Last 24 Hours</small>
-                        </div>
-                        <h5 class="success">50%</h5>
-                    </div>
+                
+                    
                 </div>
             </div>
         </div>
@@ -280,6 +269,10 @@
             themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
             themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
         })
+        var datetime = new Date();
+        console.log(datetime);
+        document.getElementById("date").textContent = datetime; 
+
     </script>
 </body>
 </html>
