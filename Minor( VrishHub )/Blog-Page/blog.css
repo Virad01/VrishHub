@@ -27,9 +27,9 @@ body {
 
 .accordion-button {
     background-color: rgba(53, 47, 56, 0.180) !important;
-    color: rgb(249, 245, 245) !important;
-    font-weight: 500 !important;
-    text-shadow: 1px 1px 5px #3a2004;
+    color: black !important;
+    font-weight: 700 !important;
+    text-shadow: 1px 1px 3px #fcfcfb;
 
 }
 
