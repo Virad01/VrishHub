@@ -26,10 +26,10 @@ body {
 }
 
 .accordion-button {
-    background-color: rgba(53, 47, 56, 0.180) !important;
-    color: black !important;
-    font-weight: 700 !important;
-    text-shadow: 1px 1px 3px #fcfcfb;
+    background-color: rgba(0, 0, 0, 0.18) !important;
+    color: rgb(247, 241, 241) !important;
+    font-weight: 750 !important;
+    text-shadow: 1px 1px 3px #000000;
 
 }
 
