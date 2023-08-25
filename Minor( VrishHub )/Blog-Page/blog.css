@@ -8,7 +8,7 @@ body {
 .accordion-item {
     background: rgb(238, 156, 156);
     /* Fallback color */
-    background: rgba(233, 232, 235, 0) !important;
+    background: rgba(250, 247, 255, 0) !important;
     /* Black background with 0.5 opacity */
     color: #f1f5f7 !important;
     /* width: 100%; */
@@ -35,7 +35,7 @@ body {
 
 .headlines {
     font-family: 'Castoro Titling', cursive !important;
-    text-shadow: 1px 3px 10px #634a2f;
+    text-shadow: 2px 3px 10px #634a2f;
 }
 
 .H {

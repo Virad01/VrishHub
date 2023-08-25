@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" time="5s">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/dashboard.css') }}">
+    <script src="{{ url_for('static',filename='script/javasc.js') }}"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="http://127.0.0.1:5000" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <img  class="logo" src="static\Images\new_logo-removebg-preview.png" alt="">
+                <div class="logo" >
+                    
+                    <h2>Vrish<span class="danger">Hub</span></h2>
+                </div>
+                <div class="close" id="closeBtn">
+                    <span class="material-icons-sharp">
+                        close
+                        </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                    <a href="">
+                        <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                    </a>
+                    <a href="#" class="active">
+                    <span class="material-icons-sharp">analytics</span>
+                    <h3>Analytics</h3>
+                    </a>
+                    <a href="#"><span class="material-icons-sharp">manage_accounts</span>
+                    <h3>Settings</h3></a>
+                    <a href="#"><span class="material-icons-sharp">account_circle</span>
+                    <h3>Your Profile</h3>
+                    </a>
+                    <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log Out</h3>
+                    </a>
+            </div>
+        </aside>
+        <!-- End of Aside -->
+        <main>
+            <H1>Good Afternoon,</H1>
+            <br>
+        
+            <div id="current_date"></p>
+                <script>
+                    document.getElementById("current_date").innerHTML = Date();
+                    </script>
+            <div class="insights">
+                <div class="holdings">
+                    <span class="material-icons-sharp">
+                        store
+                        </span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Invested Amount</h3>
+                                <H1>Rs 2,290.50</H1>
+                            </div>
+                            <div class="progress">
+                                <!-- <svg>
+                                    <circle cx='38' cy='38' r='36'></circle>
+                                </svg> -->
+                                <!-- <div class="number">
+                                    <p>81%</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!-- End Of Holdings -->
+                <div class="transactions">
+                    <span class="material-icons-sharp">
+                        difference
+                        </span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Current Amount</h3>
+                                <H1>Rs 1956.15</H1>
+                            </div>
+                            <div class="progress">
+                                <svg>
+                                    <circle cx='38' cy='38' r='36'></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>81%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!-- End Of Transactions -->
+                <div class="income">
+                    <span class="material-icons-sharp">
+                        account_balance_wallet
+                        </span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>P&L</h3>
+                                <H1>Rs -343.35(0.73%)</H1>
+                            </div>
+                            <div class="progress">
+                                
+                            
+                            </div>
+                        </div>
+                        <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!-- End Of income -->
+            </div> <!-- End of Insights -->
+            <div class="recent-purchase">
+                <H2>Best Options</H2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Stock Name</th>
+                            <th>Price Now</th>
+                            <th>Predicted Price</th>
+                            <th>Expected To</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody><tr>
+                        <td>HDFC</td>
+                        <td>2700.14</td>
+                        <td>2760.50</td>
+                        <td class="warning">GO UP</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>VADILALIND</td>
+                        <td>1915.80</td>
+                        <td>1969.96</td>
+                        <td class="warning">GO UP</td>
+                        <td class="primary">Details</td>
+                    </tr><tr>
+                        <td>IOC</td>
+                        <td>76.04</td>
+                        <td>80.27</td>
+                        <td class="warning">GO UP</td>
+                        <td class="primary">Details</td>
+                    </tr><tr>
+                        <td>JPPOWER</td>
+                        <td>4.96</td>
+                        <td>5.29</td>
+                        <td class="warning">GO UP</td>
+                        <td class="primary">Details</td>
+                    </tr><tr>
+                        <td>M&M</td>
+                        <td>1210.96</td>
+                        <td>1208.15</td>
+                        <td class="warning">GO DOWN</td>
+                        <td class="primary">Details</td>
+                    </tr></tbody>
+                </table>
+                <!-- <a href="#">Show All</a> -->
+            </div>
+        </main>
+        <!-- End Of Main -->
+        <div class="right">
+            <div class="top">
+                <button id="menuBtn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                
+                <div class="profile">
+                    <div class="info">
+                        <p>Hello, <b>Vinayak </b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- End Of Top -->
+            <div class="recent-updates">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="message">
+                            <p><b>Tata Steel : </b> The price is expected to go up.</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="updates">
+                        <div class="update">
+                            <div class="message">
+                                <p><b>ONGC : </b> The price is expected to go UP.</p>
+                                <small class="text-muted">2 Minutes Ago</small>
+                            </div>
+                    </div>
+                    <div class="updates">
+                        <div class="update">
+                            <div class="message">
+                                <p><b>Olectra Greentech : </b> The price is expected to go down.</p>
+                                <small class="text-muted">2 Minutes Ago</small>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            <!-- End Of Updates -->
+            <div class="st-analytics">
+                <div class="stocks up">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            trending_up
+                            </span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <a href=""><h3>Rising Stocks</h3></a>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">50%</h5>
+                    </div>
+                </div>
+                <div class="stocks down">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            trending_down
+                            </span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <a href=""><h3>Falling Stocks</h3></a>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="danger">50%</h5>
+                    </div>
+                </div>
+                <div class="stocks static">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            sailing
+                            </span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <a href=""><h3>Static Stocks</h3></a>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">50%</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </body>
+</html>

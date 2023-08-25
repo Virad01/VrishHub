@@ -1,37 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-:root{
+:root {
     --primary: #000000;
-    --secondary:#000000 ;
+    --secondary: #000000;
     --pure: #fff;
     --purple: #7a00ff;
     --orange: #ff0f0f;
     --red: #b00020;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 
 
-.hamburger{
+.hamburger {
     color: rgb(255, 255, 255);
 }
 
 
 
-header i{
+header i {
     font-size: x-large;
 }

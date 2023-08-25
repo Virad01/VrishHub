@@ -13,9 +13,10 @@
     <div class="container">
         <aside>
             <div class="top">
-                <div class="logo">
-                    <img src="logo.jpeg" alt="">
-                    <h2>Vrish<span class="danger">HUB</span></h2>
+                <img  class="logo" src="/VrishHub/Minor( VrishHub )/images/new_logo-removebg-preview.png" alt="">
+                <div class="logo" >
+                    
+                    <h2>Vrish<span class="danger">Hub</span></h2>
                 </div>
                 <div class="close" id="closeBtn">
                     <span class="material-icons-sharp">
@@ -32,8 +33,6 @@
                     <span class="material-icons-sharp">analytics</span>
                     <h3>Analytics</h3>
                     </a>
-                    <a href="#"><span class="material-icons-sharp">receipt_long</span>
-                    <h3>Your Orders</h3></a>
                     <a href="#"><span class="material-icons-sharp">manage_accounts</span>
                     <h3>Settings</h3></a>
                     <a href="#"><span class="material-icons-sharp">account_circle</span>
@@ -47,10 +46,13 @@
         </aside>
         <!-- End of Aside -->
         <main>
-            <H1>Dashboard</H1>
-            <div class="date">
-                <span id="date"> </span>
-            </div>
+            <H1><p id="greetings"></p></H1>
+            <br>
+        
+            <div id="current_date"></p>
+                <script>
+                    document.getElementById("current_date").innerHTML = Date();
+                    </script>
             <div class="insights">
                 <div class="holdings">
                     <span class="material-icons-sharp">
@@ -58,15 +60,16 @@
                         </span>
                         <div class="middle">
                             <div class="left">
-                                <h3>Your Stocks</h3>
+                                <h3>Invested Amount</h3>
+                                <H1>Rs 2,290.50</H1>
                             </div>
                             <div class="progress">
-                                <svg>
+                                <!-- <svg>
                                     <circle cx='38' cy='38' r='36'></circle>
-                                </svg>
-                                <div class="number">
+                                </svg> -->
+                                <!-- <div class="number">
                                     <p>81%</p>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <small class="text-muted">Last 24 Hours</small>
@@ -78,7 +81,8 @@
                         </span>
                         <div class="middle">
                             <div class="left">
-                                <h3>Your Transactions</h3>
+                                <h3>Current Amount</h3>
+                                <H1>Rs 1956.15</H1>
                             </div>
                             <div class="progress">
                                 <svg>
@@ -98,64 +102,59 @@
                         </span>
                         <div class="middle">
                             <div class="left">
-                                <h3>Your Income</h3>
-                                <H1>Rs 50,000</H1>
+                                <h3>P&L</h3>
+                                <H1>Rs -343.35(0.73%)</H1>
                             </div>
                             <div class="progress">
-                                <svg>
-                                    <circle cx='38' cy='38' r='36'></circle>
-                                </svg>
-                                <div class="number">
-                                    <p>55%</p>
-                                </div>
+                                
+                            
                             </div>
                         </div>
                         <small class="text-muted">Last 24 Hours</small>
                 </div>
                 <!-- End Of income -->
-            </div>
-            <!-- End of Insights -->
+            </div> <!-- End of Insights -->
             <div class="recent-purchase">
-                <H2>Recommended Stocks </H2>
+                <H2>Best Options</H2>
                 <table>
                     <thead>
                         <tr>
                             <th>Stock Name</th>
-                            <th>Price Bought</th>
                             <th>Price Now</th>
+                            <th>Predicted Price</th>
                             <th>Expected To</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody><tr>
-                        <td>Tata Steel</td>
-                        <td>5600</td>
-                        <td>5640</td>
-                        <td class="warning">GO DOWN</td>
+                        <td>HDFC</td>
+                        <td>2700.14</td>
+                        <td>2760.50</td>
+                        <td class="warning">GO UP</td>
                         <td class="primary">Details</td>
                     </tr>
                     <tr>
-                        <td>Tata Steel</td>
-                        <td>5600</td>
-                        <td>5640</td>
-                        <td class="warning">GO DOWN</td>
+                        <td>VADILALIND</td>
+                        <td>1915.80</td>
+                        <td>1969.96</td>
+                        <td class="warning">GO UP</td>
                         <td class="primary">Details</td>
                     </tr><tr>
-                        <td>Tata Steel</td>
-                        <td>5600</td>
-                        <td>5640</td>
-                        <td class="warning">GO DOWN</td>
+                        <td>IOC</td>
+                        <td>76.04</td>
+                        <td>80.27</td>
+                        <td class="warning">GO UP</td>
                         <td class="primary">Details</td>
                     </tr><tr>
-                        <td>Tata Steel</td>
-                        <td>5600</td>
-                        <td>5640</td>
-                        <td class="warning">GO DOWN</td>
+                        <td>JPPOWER</td>
+                        <td>4.96</td>
+                        <td>5.29</td>
+                        <td class="warning">GO UP</td>
                         <td class="primary">Details</td>
                     </tr><tr>
-                        <td>Tata Steel</td>
-                        <td>5600</td>
-                        <td>5640</td>
+                        <td>M&M</td>
+                        <td>1210.96</td>
+                        <td>1208.15</td>
                         <td class="warning">GO DOWN</td>
                         <td class="primary">Details</td>
                     </tr></tbody>
@@ -169,17 +168,14 @@
                 <button id="menuBtn">
                     <span class="material-icons-sharp">menu</span>
                 </button>
-                <div class="theme-toggler">
-                    <span class="material-icons-sharp active">light_mode</span>
-                    <span class="material-icons-sharp">dark_mode</span>
-                </div>
+                
                 <div class="profile">
                     <div class="info">
-                        <p>Hey, <b>Daniel</b></p>
+                        <p>Hello, <b>Vinayak </b></p>
                         <small class="text-muted">Admin</small>
                     </div>
                     <div class="profile-photo">
-                        <img src="minor.jpg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
             </div>
@@ -189,31 +185,25 @@
                 <div class="updates">
                     <div class="update">
                         <div class="message">
-                            <p><b>Tata Steel : </b> The price is expected to go down.</p>
+                            <p><b>Tata Steel : </b> The price is expected to go up.</p>
                             <small class="text-muted">2 Minutes Ago</small>
                         </div>
                     </div>
                     <div class="updates">
                         <div class="update">
                             <div class="message">
-                                <p><b>Tata Steel : </b> The price is expected to go down.</p>
+                                <p><b>ONGC : </b> The price is expected to go UP.</p>
                                 <small class="text-muted">2 Minutes Ago</small>
                             </div>
                     </div>
                     <div class="updates">
                         <div class="update">
                             <div class="message">
-                                <p><b>Tata Steel : </b> The price is expected to go down.</p>
+                                <p><b>Olectra Greentech : </b> The price is expected to go down.</p>
                                 <small class="text-muted">2 Minutes Ago</small>
                             </div>
                         </div>
-                    <div class="updates">               
-                        <div class="update">
-                            <div class="message">
-                                <p><b>Tata Steel : </b> The price is expected to go down.</p>
-                                 <small class="text-muted">2 Minutes Ago</small>
-                            </div>
-                        </div>
+                    
                 </div>
             </div>
             <!-- End Of Updates -->
@@ -246,13 +236,28 @@
                         <h5 class="danger">50%</h5>
                     </div>
                 </div>
-                
-                    
+                <div class="stocks static">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            sailing
+                            </span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <a href=""><h3>Static Stocks</h3></a>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">50%</h5>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <h3 class="footer">Made with ❤️ by VrishHub Team</h3>
+     </footer>
     <script>
+
         const sideMenu = document.querySelector("aside");
         const menuBtn = document.querySelector("#menuBtn");
         const closeBtn = document.querySelector("#closeBtn");
@@ -264,15 +269,20 @@
         closeBtn.addEventListener('click', ()=>{
         sideMenu.style.display= 'none';
         })
-        themeToggler.addEventListener('click',()=>{
-            document.body.classList.toggle('dark-theme.variables');
-            themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
-            themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
-        })
-        var datetime = new Date();
-        console.log(datetime);
-        document.getElementById("date").textContent = datetime; 
-
+        
+        
+    
+    <!-- wishing the users -->
+          var myDate = new Date();
+          var hrs = myDate.getHours();
+          var greet;
+          if (hrs < 12)
+            greet = 'Good Morning';
+          else if (hrs >= 12 && hrs <= 17)
+            greet = 'Good Afternoon';
+          else if (hrs >= 17 && hrs <= 24)
+            greet = 'Good Evening';
+          document.getElementById('greetings').innerHTML ='<b>' + greet + '</b>'; 
     </script>
-</body>
+    </body>
 </html>
